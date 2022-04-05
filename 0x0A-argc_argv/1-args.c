@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * main - Entry point
  * @argc: Argument count in function main
  * @argv: Argument vector that points to a string in function main
