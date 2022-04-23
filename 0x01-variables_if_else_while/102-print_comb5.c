@@ -18,7 +18,7 @@ int main(void)
 				numb4 = '0';
 				while (numb4 <= '9')
 				{
-					if (numb1 >= numb2 || numb3 <= numb4)
+					if (numb1 >= numb2 || numb4 <= numb3)
 					{
 					if (numb1 <= numb3 && numb2 < numb4)
 					{
