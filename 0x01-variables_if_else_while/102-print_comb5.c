@@ -29,7 +29,10 @@ int main(void)
 						putchar(numb4);
 					if ((numb1 != '9' || numb2 != '8' || numb3 != '9') &&
 					(numb1 != '9' || numb2 != '8' || numb3 != '9' || numb4 != '9'))
+					{
 						putchar(',');
+						putchar(' ');
+					}
 					}
 					}
 					numb4++;
