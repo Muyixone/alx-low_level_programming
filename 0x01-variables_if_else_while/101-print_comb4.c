@@ -9,23 +9,23 @@ int main(void)
 
 	numb1 = '0';
 
-	while (numb1 <= '7')
+	while (numb1 <= '9')
 	{
 		numb2 = '0';
 
-		while (numb2 <= '8')
+		while (numb2 <= '9')
 		{
-			numb3 = '2';
+			numb3 = '0';
 
 			while (numb3 <= '9')
 			{
-				if (numb1 != numb2 && numb2 != numb3 && numb3 != numb1)
+				if (numb1 < numb2 && numb2 < numb3)
 				{
 					putchar(numb1);
 					putchar(numb2);
 					putchar(numb3);
-					if (numb1 != '7' || numb2 != '8' || numb3 != '9' ||
-					(numb1 != '7' && numb2 != '8' && numb3 != '9'))
+					if ((numb1 != '7' || numb2 != '8') &&
+					(numb1 != '7' || numb2 != '8' || numb3 != '9'))
 					{
 						putchar(',');
 						putchar(' ');
