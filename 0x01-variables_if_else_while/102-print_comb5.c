@@ -1,48 +1,49 @@
 #include <stdio.h>
+
 /**
- * main - Program to print possible combinations of two two digits
- * Return: Always 0 Success;
+ * main - Prints three combination of numbers
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
-	int numb1 = '0', numb2, numb3, numb4;
+	int a = 48, b, c, d;
 
-	while (numb1 <= '9')
+	while (a <= 57)
 	{
-		numb2 = '0';
-		while (numb2 <= '9')
+		b = 48;
+		while (b <= 57)
 		{
-			numb3 = '0';
-			while (numb3 <= '9')
+			c = 48;
+			while (c <= 57)
 			{
-				numb4 = '0';
-				while (numb4 <= '9')
+				d = 48;
+				while (d <= 57)
 				{
-					if (numb1 >= numb2 || numb4 <= numb3)
+					if (((c + d) > (a + b) && d >= a) || a < d)
 					{
-					if (numb1 <= numb3 && numb2 < numb4)
-					{
-						putchar(numb1);
-						putchar(numb2);
+						putchar(a);
+						putchar(b);
 						putchar(' ');
-						putchar(numb3);
-						putchar(numb4);
-					if ((numb1 != '9' || numb2 != '8' || numb3 != '9') &&
-					(numb1 != '9' || numb2 != '8' || numb3 != '9' || numb4 != '9'))
+						putchar(c);
+						putchar(d);
+					if (a + b + c + d == 227 && a == 57)
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
 					}
 					}
-					}
-					numb4++;
+					d++;
 				}
-				numb3++;
+				c++;
 			}
-			numb2++;
+			b++;
 		}
-		numb1++;
+		a++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
