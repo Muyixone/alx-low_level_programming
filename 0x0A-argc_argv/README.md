@@ -5,3 +5,5 @@ File 0-whatsmyname.c: Contains a function that prints the name of the program. T
 File 1-args.c: Contains a function that prints the number of arguments passed to main from the command line
 
 File 2-args.c: Contains a function that prints all arguments it receives.
+
+File 3-mul.c: Contains a function that multiplies two numbers when the argument count is greater than 2
