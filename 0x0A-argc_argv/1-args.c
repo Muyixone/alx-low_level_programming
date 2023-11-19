@@ -6,6 +6,8 @@
   * passed in the command line.
   * @argv: An unused parameter.
   *
+  * __attribute__((unused)): a GCC extension to surpress
+  * unused parameter warning.
   * Return: 0 success.
 */
 
