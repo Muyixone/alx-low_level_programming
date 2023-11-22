@@ -23,7 +23,10 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	arr = malloc(width * height * sizeof(int));
 	if (arr == NULL)
+	{
+		free(arr);
 		return (NULL);
+	}
 
 	for (i = 0; i < width; i++)
 		ptr[i] = &arr[i * height];
