@@ -9,3 +9,5 @@ File 2-str_concat.c: contains a funtion that concatenates two strings
 File 3-alloc_grid.c: contains a function that returns a pointer to a 2-dimensional array of integers.
 
 File 4-free_grid.c: contains a function that frees a 2-D grid.
+
+File 100-argstostr.c: contains a function that dynamically accepts arguments to main and concatenated the strings.
