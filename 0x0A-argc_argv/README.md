@@ -9,3 +9,5 @@ File 2-args.c: Contains a function that prints all arguments it receives.
 File 3-mul.c: Contains a function that multiplies two numbers when the argument count is greater than 2
 
 File 4-add.c: Contains a function that adds positive numbers, and throws an Error when one of the numbers contains nnon digits.
+
+File 100-change.c: Contains a function that prints minimum number of coins to make a change for an amount of money.
