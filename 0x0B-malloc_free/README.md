@@ -11,3 +11,5 @@ File 3-alloc_grid.c: contains a function that returns a pointer to a 2-dimension
 File 4-free_grid.c: contains a function that frees a 2-D grid.
 
 File 100-argstostr.c: contains a function that dynamically accepts arguments to main and concatenated the strings.
+
+File 101-strtow.c: is a program that splits a string intow words.
