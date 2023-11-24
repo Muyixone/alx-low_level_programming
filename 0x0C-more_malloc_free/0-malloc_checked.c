@@ -17,6 +17,6 @@ void *malloc_checked(unsigned int b)
 	if (memory == NULL)
 		exit(98);
 	for (i = 0; i < b; i++)
-		memory[i] = b;
+		memory[i] = b - i;
 	return (memory);
 }
