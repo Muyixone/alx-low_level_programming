@@ -13,10 +13,10 @@ void *malloc_checked(unsigned int b)
 	int *memory;
 	unsigned int i;
 
-	memory = (int *) malloc(sizeof(int) * b);
+	memory = malloc(sizeof(*memory) * b);
 	if (memory == NULL)
 		exit(98);
 	for (i = 0; i < b; i++)
-		memory[i] = b;
+		*memory = b;
 	return (memory);
 }
