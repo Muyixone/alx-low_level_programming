@@ -5,3 +5,5 @@ File 0-malloc_checked.c: Is a program that returns a pointer to an allocated spa
 File 2-calloc.c: Is a program that allocates memory for an array. It initializes memory to zero
 
 File 3-array_range.c Contains a function that creats an array containing all values from min to max, ordered from lowest to highest.
+
+File 1-string_nconcat.c: Contains a function that concatenates two strings.
