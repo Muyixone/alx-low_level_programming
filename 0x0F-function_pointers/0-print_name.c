@@ -6,10 +6,10 @@
   * @f: Parameter of funtion pointer that accepts a string
   * and returns void.
   *
-  * Return: void.
+  * Return: Nothing..
 */
 
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name);
+	f(name);
 }
