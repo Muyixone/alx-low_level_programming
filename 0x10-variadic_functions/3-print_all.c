@@ -18,7 +18,6 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	count = 1;
 	str = format;
-
 	while (*str != '\0')
 	{
 		switch (*str)
@@ -33,17 +32,20 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(ap, double));
 				break;
 			case 's':
-				if ('s' == '\0')
+				if (NULL)
 					printf("(nil)");
-				else
-					printf("%s", va_arg(ap, const char *));
+				printf("%s", va_arg(ap, const char *));
 			default:
 				break;
 		}
-		if (*str == 'c' || *str == 'i' || *str == 'f' || *str == 's')
+		switch (*str)
 		{
-			if (str[count] != '\0')
-				printf(", ");
+			case 'c':
+			case 'i':
+			case 'f':
+			case 's':
+				if (str[count] != '\0')
+					printf(", ");
 		}
 		count++;
 		++str;
