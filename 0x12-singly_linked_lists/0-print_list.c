@@ -9,10 +9,12 @@
 size_t print_list(const list_t *h)
 {
 	char *str_val;
+	const list_t *temp;
 	int count;
 
+	temp = h;
 	count = 0;
-	while (h != 0)
+	while (temp != 0)
 	{
 		str_val = temp->str;
 		if (str_val != NULL)
